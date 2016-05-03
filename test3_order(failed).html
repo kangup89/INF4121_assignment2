@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://demo.avactis.com/" />
+<title>test3_order(failed)</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test3_order(failed)</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My cart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotText</td>
+	<td>//div[4]/div/div/div/div/div/div</td>
+	<td>No items in the shopping cart</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.form-group &gt; a.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input_text_req_empty_id_81037305</td>
+	<td>first</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input_text_req_empty_id_360325298</td>
+	<td>last</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input_text_req_empty_id_1536792336</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input_text_req_empty_id_1623630612</td>
+	<td>city</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input_text_req_empty_id_255380242</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Continue Checkout']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=step_1_errors</td>
+	<td>1. Field 'First Name' in form 'Shipping Information' is required.<br /> 2. Field 'Last Name' in form 'Shipping Information' is required.<br /> 3. Field 'ZIP Code' in form 'Shipping Information' is required.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=checkbox_shipping_same_as_billing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.shipping_same_as_billing.checkbox &gt; label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Continue Checkout']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@value='Continue Checkout'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=step_2_errors</td>
+	<td>1. Please select a delivery method.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=shippingModuleAndMethod[method_code]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@value='Continue Checkout'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='checkout_3']/div[7]/div/ul/li[3]/strong</td>
+	<td>$54.06</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Place Order']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div</td>
+	<td>Your order is placed. Order ID: #00013 <br /> Order details have been sent to your e-mail address.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My cart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[4]/div/div/div/div/div/div</td>
+	<td>No items in the shopping cart</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
